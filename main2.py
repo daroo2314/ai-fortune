@@ -8,7 +8,7 @@ st.balloons()
 st.title('AI fortune teller')
 
 content = st.text_input('Please enter your date of birth or your zodiac sign of birth.')
-st.text('**If it's not the answer you want, press the button again.**')
+st.text("**If it's not the answer you want, press the button again.**")
 # result = chat_model.predict(content + "국악가사를 써줘")
 # print(result)
 
