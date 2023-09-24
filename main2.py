@@ -14,7 +14,7 @@ st.text("**If it's not the answer you want, press the button again.**")
 
 if st.button("Tell me today's horoscope"):
    with st.spinner('frotune-telling...'):
-      result = chat_model.predict('date of birth or zodiac sign of birth' + content + '의 별자리 오늘 운세를 영문과 한글둘다 답변해줘')
+      result = chat_model.predict('date of birth or zodiac sign of birth' + content + '의 별자리 오늘 운세를 영문으로 말해주고 한글로도 답변해줘')
       st.write(result) 
 st.image('http://daroousa.com/en/theme/basic/img/w4/w4_1_1.png')
 st.link_button("Go to Roar Festival", "http://daroousa.com/en/bbs/board.php?bo_table=en_w4_c&wr_id=1")
