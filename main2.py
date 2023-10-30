@@ -7,14 +7,14 @@ chat_model = ChatOpenAI()
 st.balloons()
 st.title('AI fortune teller')
 
-content = st.text_input('Please enter your date of birth or your zodiac sign of birth.')
-st.text("**If it's not the answer you want, press the button again.**")
+content = st.text_input('묻고싶은 내용을 입력하세요')
+st.text('원하는 답변이 아니면 버튼을 다시 눌러주세요')
 # result = chat_model.predict(content + "국악가사를 써줘")
 # print(result)
 
-if st.button("Tell me today's horoscope"):
-   with st.spinner('frotune-telling...'):
-      result = chat_model.predict('date of birth or zodiac sign of birth' + content + '의 별자리 오늘 운세를 영문으로 말해주고 한국어로도 말해줘')
+if st.button("답해줘"):
+   with st.spinner('작성중...'):
+      result = chat_model.predict(content)
       st.write(result) 
-st.image('http://daroousa.com/en/theme/basic/img/w4/w4_1_1.png')
-st.link_button("Go to Roar Festival", "http://daroousa.com/en/bbs/board.php?bo_table=en_w4_c&wr_id=1")
+st.image('https://oasisbpartners.netlify.app/assets/images/resources/logo.png')
+#st.link_button("Go to Roar Festival", "http://daroousa.com/en/bbs/board.php?bo_table=en_w4_c&wr_id=1")
