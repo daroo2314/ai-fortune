@@ -9,7 +9,7 @@ st.title("Jenny's AI fortune teller")
 
 content = st.text_input('Please enter your date of birth')
 st.text('If the answer you want is not correct, please press the button again.')
-   result = chat_model.predict("My birthdate is" + content + "Tell me today's fortune. The phrase that starts with" +content+ "is your fortune that was born in" + content)
+result = chat_model.predict("My birthdate is" + content + "Tell me today's fortune. The phrase that starts with" +content+ "is your fortune that was born in" + content)
 # print(result)
 
 if st.button("Tell me please"):
