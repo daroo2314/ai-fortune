@@ -5,7 +5,7 @@ from langchain.chat_models import ChatOpenAI
 
 chat_model = ChatOpenAI()
 st.balloons()
-st.title('Jenny's AI fortune teller')
+st.title("Jenny's AI fortune teller")
 
 content = st.text_input('Please enter your date of birth')
 st.text('If the answer you want is not correct, please press the button again.')
