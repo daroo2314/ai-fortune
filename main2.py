@@ -9,7 +9,7 @@ st.title("Jenny's AI fortune teller")
 
 content = st.text_input('Please enter your date of birth')
 st.text('If the answer you want is not correct, please press the button again.')
-result = chat_model.predict(content + "인 사람의 오늘의 별자리 운세를 말해줘 당신의 오늘의 운세는으로 시작하는 영어로 번역해서 답해줘")
+result = chat_model.predict(content + "인 사람의 오늘의 별자리 운세를 말해줘 '당신의 오늘의 운세는'으로 시작하는 답변으로 영어로 번역해서 답해줘")
 # print(result)
 
 if st.button("Tell me please"):
